@@ -4,12 +4,12 @@
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div class="flex h-16 items-center justify-between">
             <div class="flex items-center">
-              <NuxtLink to="/" class="flex-shrink-0 p-2 rounded-md text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+              <NuxtLink to="/" active-class="bg-gray-900 hover:bg-gray-900 text-white" class="flex-shrink-0 p-2 rounded-md text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                 <HomeIcon class="block h-6 w-6" aria-hidden="true" />  
               </NuxtLink>
               <div class="hidden md:block">
                 <div class="ml-10 flex items-baseline space-x-4">
-                  <NuxtLink v-for="item in navigation" :key="item.name" :to="item.to" active-class="bg-gray-900 hover:bg-gray-900 text-white" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">{{ item.name }}</NuxtLink>
+                  <NuxtLink v-for="item in navigation" :key="item.name" :to="item.to" active-class="bg-gray-900 hover:bg-gray-900 text-white" class="text-gray-300 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 hover:text-white rounded-md px-3 py-2 text-sm font-medium">{{ item.name }}</NuxtLink>
                 </div>
               </div>
             </div>
@@ -33,13 +33,9 @@
         </DisclosurePanel>
       </Disclosure>
   
-      <header class="bg-white shadow">
-        <div class="mx-auto max-w-7xl py-6 px-4 sm:px-6 lg:px-8">
-          <h1 class="text-3xl font-bold tracking-tight text-gray-900">Dashboard</h1>
-        </div>
-      </header>
+      
       <main>
-        <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-7xl py-6 px-4 sm:px-6 lg:px-8">
           <NuxtPage />
         </div>
       </main>
@@ -52,6 +48,6 @@
   
   const navigation = [
     { name: 'Denne uka', to: '/current'},
-    { name: 'Alle uker', to: '/all'},
+    { name: 'Alle uker', to: '/weeks'},
   ]
   </script>
