@@ -7,7 +7,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "gh-pages -d dist"
+    "deploy": "npm run generate && push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "devDependencies": {
     "@nuxtjs/eslint-module": "^4.0.2",
@@ -18,8 +18,8 @@
     "@tailwindcss/typography": "^0.5.9",
     "@types/node": "^18.15.7",
     "eslint": "^8.36.0",
-    "gh-pages": "^5.0.0",
-    "nuxt": "^3.3.2"
+    "nuxt": "^3.3.2",
+    "push-dir": "^0.4.1"
   },
   "dependencies": {
     "@headlessui/vue": "^1.7.12",
