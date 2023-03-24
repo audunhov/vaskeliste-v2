@@ -1,7 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-modules: [
-    "@nuxtjs/tailwindcss",
-    "@nuxtjs/eslint-module"
-]
+    ssr: true,
+    app: {
+        baseURL: "/vaskeliste/"
+    },
+    modules: [
+        "@nuxtjs/tailwindcss",
+        "@nuxtjs/eslint-module"
+    ]
 })
