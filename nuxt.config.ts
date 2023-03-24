@@ -4,6 +4,7 @@ export default defineNuxtConfig({
         baseURL: "/vaskeliste/"
     },
     modules: [
+        '@vite-pwa/nuxt',
         "@nuxtjs/tailwindcss",
         "@nuxtjs/eslint-module"
     ]

@@ -45,7 +45,7 @@
   <script setup lang="ts">
   import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
   import { Bars3Icon, HomeIcon, XMarkIcon } from '@heroicons/vue/24/outline'
-  
+
   const navigation = [
     { name: 'Denne uka', to: '/current'},
     { name: 'Alle uker', to: '/weeks'},
