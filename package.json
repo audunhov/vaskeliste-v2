@@ -7,7 +7,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "push": "push-dir --dir=dist --branch=gh-pages --cleanup",
+    "push": "gh-pages --dotfiles --dist dist",
     "deploy": "npm run generate && npm run push"
   },
   "devDependencies": {
