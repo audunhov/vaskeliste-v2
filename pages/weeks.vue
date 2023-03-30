@@ -1,6 +1,7 @@
 <template>
+    <div class="space-y-5">
     <ContentSection>
-        <h1>Alle uker</h1>
+        <h1 class="text-3xl font-bold tracking-tight text-gray-900">Alle uker</h1>
     </ContentSection>
 
     <ContentSection>
@@ -19,4 +20,5 @@
             </tr>
         </table>
     </ContentSection>
+</div>
 </template>

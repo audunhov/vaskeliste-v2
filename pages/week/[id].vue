@@ -19,16 +19,16 @@
     
     <ContentSection>
       <div class="grid place-items-center gap-2">
-        <img :src="url" alt="Ukas bilde" class="border-[15px] border-black">
+        <img :src="url" alt="Ukas bilde" class="border-[15px] h-[215px] w-[215px] border-black">
         <h2>Ukas bilde</h2>
     </div>
     </ContentSection>
     
     
-    <NuxtLink v-if="week > 1" :to="`/week/${week - 1}`" class="w-[200px] border rounded p-2 hover:bg-slate-200 focus:outline-none focus:ring-2">
+    <NuxtLink v-if="week > 1" :to="`/week/${week - 1}`" class="w-[200px] border rounded p-2 bg-white hover:bg-slate-200 focus:outline-none focus:ring-2">
       Se forrige uke
     </NuxtLink>
-    <NuxtLink v-if="week < 52" :to="`/week/${week + 1}`" class="w-[200px] border rounded p-2 hover:bg-slate-200 focus:outline-none focus:ring-2">
+    <NuxtLink v-if="week < 52" :to="`/week/${week + 1}`" class="w-[200px] border rounded p-2 bg-white hover:bg-slate-200 focus:outline-none focus:ring-2">
       Se neste uke
     </NuxtLink>
     

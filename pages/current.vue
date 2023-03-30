@@ -3,7 +3,7 @@
 <div class="flex flex-col gap-5 items-center">
 <header class="w-full">
 <ContentSection>
-  <h1 class="text-3xl font-bold tracking-tight text-gray-900">Uke {{ week }}</h1>
+  <h1 class="text-3xl font-bold tracking-tight text-gray-900">Denne uka</h1>
 </ContentSection>
 </header>
 
@@ -25,10 +25,10 @@
 </ContentSection>
 
 
-<NuxtLink :to="`/week/${week - 1}`" class="w-[200px] border rounded p-2 hover:bg-slate-200 focus:outline-none focus:ring-2">
+<NuxtLink :to="`/week/${week - 1}`" class="w-[200px] border rounded p-2 bg-white hover:bg-slate-200 focus:outline-none focus:ring-2">
   Se forrige uke
 </NuxtLink>
-<NuxtLink :to="`/week/${week + 1}`" class="w-[200px] border rounded p-2 hover:bg-slate-200 focus:outline-none focus:ring-2">
+<NuxtLink :to="`/week/${week + 1}`" class="w-[200px] border rounded p-2 bg-white hover:bg-slate-200 focus:outline-none focus:ring-2">
   Se neste uke
 </NuxtLink>
 
